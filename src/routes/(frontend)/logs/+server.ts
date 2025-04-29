@@ -12,3 +12,20 @@ export const GET: RequestHandler = async () => {
 		return new Response('Failed to load log.', { status: 500 });
 	}
 };
+
+export const POST: RequestHandler = async ({ request }) => {
+	try {
+		const { log } = await request.json();
+		if (!log) {
+			return new Response('Log content is required.', { status: 400 });
+		}
+
+		const logs: string[] = JSON.parse(await fs.readFile(logPath, 'utf-8'));
+		logs.push(log);
+		await fs.writeFile(logPath, JSON.stringify(logs, null, 2));
+
+		return new Response('Log added successfully.', { status: 201 });
+	} catch (err) {
+		return new Response('Failed to add log.', { status: 500 });
+	}
+};

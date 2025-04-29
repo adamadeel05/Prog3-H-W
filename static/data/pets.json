@@ -1,2 +1,101 @@
 [
+  {
+    "id": 2,
+    "name": "Mittens",
+    "type": "kitten",
+    "age": 2,
+    "hunger": 0,
+    "happiness": 100,
+    "adopted": true
+  },
+  {
+    "id": 3,
+    "name": "Buddy",
+    "type": "puppy",
+    "age": 3,
+    "hunger": 50,
+    "happiness": 70,
+    "adopted": false
+  },
+  {
+    "id": 4,
+    "name": "Charlie",
+    "type": "puppy",
+    "age": 1,
+    "hunger": 30,
+    "happiness": 80,
+    "adopted": false
+  },
+  {
+    "id": 5,
+    "name": "Luna",
+    "type": "kitten",
+    "age": 1,
+    "hunger": 20,
+    "happiness": 90,
+    "adopted": false
+  },
+  {
+    "id": 6,
+    "name": "Max",
+    "type": "puppy",
+    "age": 4,
+    "hunger": 60,
+    "happiness": 50,
+    "adopted": false
+  },
+  {
+    "id": 7,
+    "name": "Bella",
+    "type": "kitten",
+    "age": 3,
+    "hunger": 40,
+    "happiness": 60,
+    "adopted": false
+  },
+  {
+    "id": 8,
+    "name": "Rocky",
+    "type": "puppy",
+    "age": 2,
+    "hunger": 70,
+    "happiness": 40,
+    "adopted": false
+  },
+  {
+    "id": 9,
+    "name": "Daisy",
+    "type": "kitten",
+    "age": 2,
+    "hunger": 10,
+    "happiness": 95,
+    "adopted": false
+  },
+  {
+    "id": 10,
+    "name": "Coco",
+    "type": "puppy",
+    "age": 5,
+    "hunger": 80,
+    "happiness": 30,
+    "adopted": false
+  },
+  {
+    "id": 11,
+    "name": "Shadow",
+    "type": "kitten",
+    "age": 4,
+    "hunger": 25,
+    "happiness": 85,
+    "adopted": false
+  },
+  {
+    "id": 12,
+    "name": "molly",
+    "type": "pet",
+    "age": 3,
+    "hunger": 50,
+    "happiness": 50,
+    "adopted": false
+  }
 ]
