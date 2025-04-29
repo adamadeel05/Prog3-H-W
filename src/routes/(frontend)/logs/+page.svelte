@@ -1,10 +1,19 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+
 	let logs: string[] = [];
 	let error = '';
 
 	onMount(async () => {
-		// TODO get logs
+		try {
+			const response = await fetch('/api/log');
+			if (!response.ok) {
+				throw new Error('Failed to fetch logs');
+			}
+			logs = await response.json();
+		} catch (err) {
+			error = err instanceof Error ? err.message : String(err);
+		}
 	});
 </script>
 
@@ -15,8 +24,19 @@
 {:else if logs.length === 0}
     <p>No actions have been logged yet.</p>
 {:else}
-    <!--   render logs here with the newest on top-->
+    <ul>
+		{#each logs.reverse() as log}
+			<li>{log}</li>
+		{/each}
+	</ul>
 {/if}
 
 <style>
+ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li {
+		margin-bottom: 0.5rem;
+	}	
 </style>

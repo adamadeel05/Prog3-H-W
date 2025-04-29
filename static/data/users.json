@@ -1,2 +1,38 @@
 [
+  {
+    "id": 2,
+    "name": "nandesh",
+    "passwordHash": "$2b$10$SQ2etpFNGKkM.k1yVOLzlOadnt1DjVOH8AM7dWy.yo4xwJeU7iiOK",
+    "role": "user",
+    "budget": 100,
+    "inventory": {
+      "food": 4,
+      "toy": 2,
+      "treat": 0
+    },
+    "pets": [
+      {
+        "id": 2,
+        "name": "Mittens",
+        "type": "kitten",
+        "age": 2,
+        "hunger": 40,
+        "happiness": 80,
+        "adopted": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "adam",
+    "passwordHash": "$2b$10$dF0DtjiPBzMPlIfLu4fxseGN1CFPxoBhyaI4FiACS6rbGbRvDqtLy",
+    "role": "admin",
+    "budget": 100,
+    "inventory": {
+      "food": 0,
+      "toy": 0,
+      "treat": 0
+    },
+    "pets": []
+  }
 ]
